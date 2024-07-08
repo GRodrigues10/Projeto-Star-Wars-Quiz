@@ -48,7 +48,7 @@ function Dificuldades() {
       
       <div className='container3'>
         <div className='dificuldade'>
-          <h1>Dificuldade:</h1>
+          <h1>Dificuldade</h1>
         </div>
         <div className='btns'>
           <button className='círculo' id='facil' onClick={facil}>Fácil</button>
