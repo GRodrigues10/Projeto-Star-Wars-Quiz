@@ -11,11 +11,13 @@
         display: flex;
         flex-direction: column;
         margin: 10px 0;
+        
     
     }
     .btns{
         display: flex;
         flex-direction: column;
+        
     }
     
 }
@@ -35,10 +37,13 @@
         display: flex;
         flex-direction: column;
         margin: 10px 0;
+        
+        
     }
     .btns{
         display: flex;
         flex-direction: column;
+        margin-bottom: 60px;
     }
 
 }
