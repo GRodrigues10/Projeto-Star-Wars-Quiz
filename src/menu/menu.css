@@ -1,0 +1,97 @@
+@font-face {
+    font-family: 'starwars';
+    src: url(../fonts/Starjhol.ttf);
+}
+
+body {
+    overflow: hidden;
+}
+
+h1 {
+    font-family: 'starwars';
+    color: yellow;
+    font-size: 6rem;
+    position: relative;
+    bottom: 200px;
+    opacity: 0;
+    animation: FadeIn 1s ease-out forwards 0.5s;
+    text-align: center;
+}
+
+.container2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: row;
+    width: 100vw;
+    height: 100vh;
+}
+
+.container2 img {
+    height: 400px;
+    position: relative;
+}
+
+.título-menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    flex-direction: column;
+}
+
+.título-menu button {
+    padding: 20px 0px;
+    font-size: 1.6rem;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.479);
+    color: white;
+    border: 1px solid yellow;
+    width: 200px;
+    cursor: pointer;
+    transition: 0.2s ease;
+    font-weight: bold;
+    opacity: 0;
+    animation: FadeIn 1s ease-out forwards 0.5s;
+    
+}
+
+.título-menu button:hover {
+    background-color: rgb(255, 255, 0);
+    border: 1px solid black;
+    color: black;
+    transform: scale(1.1);
+}
+
+.anakin {
+    position: relative;
+    transform: translateX(-100%);
+    animation: slideFromLeft 1s ease-out forwards;
+}
+
+.vader {
+    position: relative;
+    transform: translateX(100%);
+    animation: slideFromRight 1s ease-out forwards;
+}
+
+@keyframes slideFromLeft {
+    to {
+        transform: translateX(0%);
+    }
+}
+
+@keyframes slideFromRight {
+    to {
+        transform: translateX(0%);
+    }
+}
+
+@keyframes FadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}

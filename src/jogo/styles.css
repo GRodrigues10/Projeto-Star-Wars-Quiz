@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+}
+
+@font-face {
+    font-family: 'starwars';
+    src: url(../fonts/Starjhol.ttf);
+}
+
+.center-container2{
+    display: none;
+}
+
+.center-container3{
+    display: none;
+}
+
+body {
+   width: 100vw;
+   height: 100vh;
+   background-image: url(../assets/starwars.jpg);
+   background-position: center;
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-attachment: fixed;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   color: white;
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    background-color: rgba(0, 0, 0, 0.445);
+    padding: 10px;
+    border: 1px solid yellow;
+    width: 500px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    transition: 0.5s ease;
+}
+
+.container p {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 1.2rem;
+    background-color: rgba(0, 0, 0, 0.466);
+    height: 100px;
+}
+
+img {
+    height: 360px;
+    margin: 0 10px; /* Adiciona margem entre as imagens e o conteúdo */
+    
+}
+
+
+.content {
+    background-color: rgba(0, 0, 0, 0.466);
+    width: 100%;
+    margin-top: 10px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    font-size: 1.1rem;
+    cursor: pointer;
+    border: 1px solid yellow;
+    transition: 0.5s ease;
+    font-weight: 700;
+    border-radius: 5px;
+    margin-bottom:  10px;
+   
+}
+
+.content:hover {
+    background-color: yellow;
+    border: 1px solid black;
+    color: black;
+}
+
+.resultado-final .part1{
+    font-size: 2rem;
+}
+.resultado-final .part2{
+    font-size: 1.3rem;
+}
+
+.resultado-final .part3{
+    font-size: 1.3rem;
+}
+
+
+.resultado-final p span{
+    color: yellow;
+}
+span {
+    margin-left: 10px;
+}
