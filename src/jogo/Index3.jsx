@@ -21,6 +21,10 @@ function Index3() {
     }
   };
 
+  const reiniciar = () =>{
+    window.location.reload()
+  }
+
   return (
     <div className="center-container3" id='p3'>
       <div className="quiz-container">
@@ -30,6 +34,7 @@ function Index3() {
               <p className='part1'><span>Quiz finalizado!</span></p>
               <p className='part2'>Sua pontuação final foi:</p>
               <p className='part3'>{pontuacao}/{perguntasDificeis.length}</p>
+              <button className='reiniciar' onClick={reiniciar}>Reiniciar Quiz</button>
             </div>
           ) : (
             <>
